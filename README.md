@@ -1,4 +1,4 @@
-# Time tags transform program
+# Time tags transform code
 It's a Mex function to transform the original time tags to the start-stop form.
 In the Quantum Key Distribution experiments, we use single-photon detectors to detect the arriving photons. Then, a time-to-digital converter will record the arrival time of these photons. Swabian time-tagger uses 64-bit integer numbers to specify the time in picoseconds. Timetags indicate the time since the device start-up and a cycle period is about 107 days. 
 In most QKD experiments, we use an additional signal with a fixed frequency to sync all QKD systems. We want to know the time between the arriving photons and the last synchronizing signal. Therefore, we need to transform the original timestamps to start-stop form. In addition, the real-time post-processing system needs to process the current cycle arriving timestamps before the next cycle's timestamps arrive. 
